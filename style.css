@@ -1,0 +1,267 @@
+*,*:after,*:before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ul,ol{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+/* >>>>>>>Google font<<<<<<< */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@500&display=swap');
+/* >>>>>>>Google font<<<<<<< */
+/* ((((((((((((((((Variable-define START))))))))))))))))) */
+:root{
+    --primary-color:rgba(147, 3, 3, 0.97);
+    --secondary-color: rgba(92, 24, 24, 0.83);
+    --third-color: rgba(224, 77, 51, 0.972);
+    --white-color: white;
+    --text-gray: gray;
+    --black-color: black;
+    --primary-font:font-family: 'Roboto', sans-serif;
+    
+}
+h1{
+    color: var(--third-color);
+}
+
+/* ((((((((((((((((Variable-define End))))))))))))))))) */
+
+
+/* ################SCROLLBAR################# */
+/* ::-webkit-scrollbar{
+
+}
+::-webkit-scrollbar-track{
+    width: 5px;
+    background-color: var(--third-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: antiquewhite;
+} */
+/* ################SCROLLBAR################# */
+
+
+/* {{{{{{{{{{{{{{BUTTON}}}}}}}}}}}}}}}} */
+.main-btn{
+    display: inline-block;
+    line-height: 30px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    text-transform: capitalize;
+    color: var(--white-color);
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+.fa-basket-shopping{
+    padding-left:5px ;
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--third-color);
+    
+}
+/* {{{{{{{{{{{{{{BUTTON}}}}}}}}}}}}}}}} */
+/* {{{{{{{{{{{{{{{SECTION-INTRODUCTION}}}}}}}}}}}}}}}}}}} */
+.introduction{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./foodies-images/images/bg/bg-1.jpg) no-repeat center;
+    background-size: cover;
+}
+.introduction h1{
+    color: var(--primary-color);
+}
+.introduction p{
+    color: var(--text-gray);
+    padding: 1rem 0px;
+}
+/* {{{{{{{{{{{{{{{SECTION-INTRODUCTION}}}}}}}}}}}}}}}}}}} */
+/* ((((((((((((About section)))))))))))))) */
+.about{
+    
+    height: 10rem;
+    background-color: var(--primary-color);
+}
+.about h3,p{
+    color: var(--white-color);
+}
+/* ((((((((((((About section)))))))))))))) */
+/* ((((((((Explore food section))))))))))) */
+
+.food-title h2{
+    color: var(--primary-color);
+}
+.food-title p{
+   color: var(--text-gray);
+}
+.food-title{
+    display: flex;
+    align-items: center;
+}
+.fa-check{
+    color: var(--primary-color);
+}
+.img-border{
+    border: 1px solid none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img-border img{
+    transition: all 2s ease-in-out;
+    
+}
+.img-border:hover img{
+    transform: scale(1.1);
+}
+.story-section{
+    height: 80vh;
+    background: url('./foodies-images/images/bg/bg-2.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.story-title{
+    width: 80vh;
+    
+}
+
+.story-section h3{
+    color: var(--primary-color);
+}
+.story-section p{
+    color: var(--text-gray);
+  
+}
+
+#explore h2{
+    color: var(--third-color);
+}
+/* ((((((((Explore food section))))))))))) */
+/* (((((((((((((((((((card-image-hover))))))))))))))))))) */
+.card-img-effect{
+    /* width: 100%; */
+    border: 1px solid none;
+    
+    overflow: hidden;
+    
+    border-radius: 10px;
+    
+}
+.card-img-effect img{
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+.card-img-effect:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* (((((((((((((((((((card-image-hover))))))))))))))))))) */
+
+
+/* ::::::::::::::::::::::::Review section::::::::::::::::::::::::::: */
+.testimonial{
+    /* width: 100vw; */
+    /* height: 80vh; */
+    background-color: var(--primary-color);
+    /* position: relative; */
+}
+.review-slider{
+    width: 80vw;
+    /* height: 50vh; */
+    margin: auto;
+    
+}
+.carousel-inner{
+    height: 15rem;
+    background-color: rgba(92, 24, 24, 0.83);
+    margin-bottom: 5rem;
+    border: 1px solid none;
+    border-radius: 30px;
+    /* padding: 10rem; */
+    /* position: absolute; */
+}
+.carousel-item{
+    margin-top: 15rem;
+    /* position: fixed; */
+}
+.carousel-item .carousel-caption h5{
+    color: var(--primary-color);
+}
+.carousel-item img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: relative;
+    
+}
+.carousel-indicator{
+    bottom: -2.138rem;
+}
+.carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+    
+}
+.carousel-indicator button .active{
+    opacity: 1;
+}
+
+
+/* ::::::::::::::::::::::::Review section::::::::::::::::::::::::::: */
+
+/* :::::::::::::::::::::::Foods:::::::::::::::::::: */
+.foods{
+    height: 40vh;
+    background: url('./foodies-images/images/bg/bg-3.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.23493px;
+}
+/* :::::::::::::::::::::::Foods:::::::::::::::::::: */
+
+/* ::"::::::::::::Subscribe-section::":::::::::::::::::: */
+.subscribe p{
+    color: var(--text-gray);
+}
+/* ::"::::::::::::Subscribe-section::":::::::::::::::::: */
+
+/* :::::::::::::::::::Footer:::::::::::::::: */
+.footer{
+    background-color: rgb(131, 11, 11);
+    height: 60vh;
+}
+.footer .row{
+    width: 70vw;
+    margin: auto;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer i{
+    transition: all 2s ease-in-out;
+}
+.footer i:hover{
+    transform: scale(1.9);
+    color: rgb(255, 91, 3)
+}
+/* :::::::::::::::::::Footer:::::::::::::::: */
